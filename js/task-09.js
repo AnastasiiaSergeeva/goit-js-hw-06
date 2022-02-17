@@ -6,8 +6,9 @@ function getRandomHexColor() {
 }
 
 function btnClickAction() {
-  spanTextColor.textContent = getRandomHexColor();
-  document.body.style.backgroundColor=getRandomHexColor();
+  const getColor = getRandomHexColor
+  spanTextColor.textContent = getColor();
+  document.body.style.backgroundColor=getColor();
 }
 
 btnChangeColor.addEventListener('click',btnClickAction);
